@@ -54,6 +54,8 @@ var myQuestions = [
   }
 ];
 
+
+
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
 
   function showQuestions(questions, quizContainer) {
@@ -93,7 +95,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         answerContainers[i].style.color = 'red';
       }
     }
-    resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+    resultsContainer.innerHTML = 'You scored ' + numCorrect + ' out of ' + questions.length;
   }
 
   showQuestions(questions, quizContainer);
